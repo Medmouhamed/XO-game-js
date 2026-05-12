@@ -1,4 +1,4 @@
-# ❌ Modern XO (Tic-Tac-Toe) Suite ⭕
+# ❌  XO (Tic-Tac-Toe)  ⭕
 
 A feature-rich Tic-Tac-Toe game environment featuring multiple game modes and difficulty levels, built with a sleek, modern UI.
 
