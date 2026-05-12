@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    width: 360px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.title{
+    grid-column: span 3;
+    text-align: center;
+    padding: 18px 0;
+    background: #7a5cff;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(122,92,255,0.5);
+}
+
+.square{
+    height: 110px;
+    background: #2f2f45;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.square:hover{
+    background: #3b3b55;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+
+.square.X{
+    color: #ff3d7a;
+    text-shadow: 0 0 10px #ff3d7a;
+}
+
+.square.O{
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.reload{
+    grid-column: span 3;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #7a5cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 0;
+    margin-right: 30px;
+    position: relative;
+}
+
+.reload::before{
+    content: "↻"; 
+}
+
+.reload:hover{
+    background: #8c6fff;
+    transform: rotate(180deg) scale(1.1);
+} 
+
+.home{
+    grid-column: span 3;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #7a5cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 0;
+    margin-right: 30px;
+    position: relative;
+}
+
+.home::before{
+    content: "⌂"; 
+}
+
+.home:hover{
+    background: #8c6fff;
+    transform:  scale(1.1);
+} 
+
+
+a {
+    text-decoration: none; 
+    display: grid; 
+    grid-column: span 3;
+}
